@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
-public class Index{
-    public static void main(String[] args){
+public class Index
+{
+
+    public static void main(String[] args)
+    {
+
         Scanner input = new Scanner(System.in);
+        
         System.out.println("Provide the Array Size: ");
         int s = input.nextInt();
 
@@ -17,7 +22,6 @@ public class Index{
         }
 
         System.out.println("Enter the Sum Value: ");
-
         int sum = input.nextInt();
 
         for(int i = 0; i < arr.length; i++)
@@ -26,7 +30,8 @@ public class Index{
             {
                 int check = arr[i] + arr[j];
 
-                if(check == sum){
+                if(check == sum)
+                {
 
                     if(arr[i] != arr[j])
                     {
@@ -34,7 +39,6 @@ public class Index{
                     }
                 }
             }
-            
         }
     }
 }
