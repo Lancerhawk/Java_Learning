@@ -17,7 +17,7 @@ public class Index
         for(int i = 0; i < arr.length ; i++)
         {
             System.out.println("Enter the value for "+i+" Index Elements:");
-            
+
             for(int j = 0; j <arr[i].length ; j++)
             {
                 System.out.print("Enter the value for "+j+" Element: ");
@@ -27,10 +27,11 @@ public class Index
 
         System.out.println("Your 2D array is:");
         int full_sum = 0;
+        int sum;
 
         for(int i = 0; i < arr.length ; i++)
         {
-            int sum = 0; 
+            sum = 0; 
             System.out.print("( ");
             for(int j = 0; j <arr[i].length ; j++)
             {
