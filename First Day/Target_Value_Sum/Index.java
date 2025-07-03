@@ -16,27 +16,20 @@ public class Index
         for(int i = 0; i < arr.length; i++)
         {
             System.out.println("Enter the Value for " +i+ " Index: ");
-            int value = input.nextInt();
-        
-            arr[i] = value;
+            arr[i] = input.nextInt();
         }
 
         System.out.println("Enter the Sum Value: ");
         int sum = input.nextInt();
 
+
         for(int i = 0; i < arr.length; i++)
         {
-            for(int j = 0; j < arr.length; j++)
+            for(int j = i + 1; j < arr.length; j++)
             {
-                int check = arr[i] + arr[j];
-
-                if(check == sum)
+                if(arr[i] + arr[j] == sum)
                 {
-
-                    if(arr[i] != arr[j])
-                    {
-                        System.out.println(arr[i]+", "+arr[j]);
-                    }
+                    System.out.println(arr[i] + ", " + arr[j]);
                 }
             }
         }
