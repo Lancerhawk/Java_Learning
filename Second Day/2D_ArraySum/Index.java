@@ -42,6 +42,27 @@ public class Index
             full_sum = full_sum + sum;
         }
 
-        System.out.println("Full sum of the array is: "+full_sum);
+        System.out.println("Full sum of the array is(Row Wised): "+full_sum);
+
+        int index1 = 0;
+        int index2 = 0;
+        full_sum = 0;
+
+        for(int i = 0; i < arr.length ; i++)
+        {
+            sum = 0;
+            sum = arr[index1][index2];
+
+            for(int j = index1 + 1; j < arr.length ; j++)
+            {
+                sum = sum + arr[j][i];
+            }
+
+            System.out.println("The Sum of the "+i+" Column is: "+sum);
+            index2++;
+            full_sum = full_sum + sum;
+        }
+        
+        System.out.println("The Full Sum of the Array is(Column Wised): "+full_sum);
     }
 }
