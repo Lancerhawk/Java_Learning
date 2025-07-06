@@ -38,7 +38,7 @@ public class Index
                 System.out.print(arr[i][j]+ " ");
                 sum = sum + arr[i][j];
             }
-            System.out.println(") Sum of this row is: "+sum);
+            System.out.println(") -> Sum of this row is: "+sum);
             full_sum = full_sum + sum;
         }
 
