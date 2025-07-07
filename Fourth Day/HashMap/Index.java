@@ -14,6 +14,5 @@ public class Index
         }
 
         System.out.println(map);
-
     }
 }
